@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Very-light-blue: hsl(245, 83%, 68%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    width: 327px;
+    height: 567px;
+    margin: 70px auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.container__image {
+   background-image: url(./images/illustration-hero.svg);
+   background-size: cover;
+   height: 160px;
+}
+
+.container__title {
+    text-align: center;
+    margin: 30px 32px 16px 32px;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.container__description {
+    text-align: center;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 32px 41px 32px;
+}
+
+
+.container__plan {
+    width: 279px;
+    height: 81px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 24px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 11px;
+}
+
+.plan__icon {
+    background-image: url(./images/icon-music.svg);
+    background-size: cover;
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+}
+
+
+.plan__payment p:nth-child(1) {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.plan__payment p:nth-child(2) {
+    color: var(--Desaturated-blue);
+}
+
+.change {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.change:hover {
+    text-decoration: none;
+    color: var(--Very-light-blue);
+}
+
+.button-pay {
+    width: 279px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 24px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.button-pay:hover {
+    background-color: var(--Very-light-blue);
+    cursor: pointer;
+}
+
+.container__cancel {
+    text-align: center;
+}
+
+.cancel {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    margin-bottom: 48px;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+}
+
+
+
+/* --------------------------Desktop-------------------------- */
+@media (min-width: 944px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
+
+    .container {
+        width: 450px;
+        height: 697px;
+        margin-bottom: 50px;
+    }
+
+    .container__image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .container__title {
+        margin: 45px 48px 17px 45px;
+    }
+
+    .container__description {
+        margin: 0 48px 20px 48px;
+    }
+
+    .container__plan {
+        width: 354px;
+        height: 98px;
+        margin: 0 48px 32px 48px;
+    }
+
+    .plan__payment p:nth-child(1) {
+        font-size: 16px;
+    }
+    
+    .plan__payment p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .change {
+        font-size: 14px;
+    }
+
+    .button-pay {
+        width: 354px;
+        height: 50px;
+        margin: 0 48px 32px 48px;
+    }
+
+    .cancel {
+        font-size: 15px;
+        margin: 0 auto 48px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------footer-------------------------- */
+.attribution{
+    font-size: 14px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
